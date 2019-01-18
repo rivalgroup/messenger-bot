@@ -22,7 +22,7 @@ class Bot extends EventEmitter {
   getProfile (id, cb) {
     return request({
       method: 'GET',
-      uri: `https://graph.facebook.com/v2.6/${id}`,
+      uri: `https://graph.facebook.com/v2.12/${id}`,
       qs: this._getQs({fields: 'first_name,last_name,profile_pic'}),
       json: true
     })
